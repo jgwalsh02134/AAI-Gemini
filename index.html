@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albany Aegis Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aai-blue': '#1a202c', /* Darker blue for primary elements */
+                        'aai-light-blue': '#2c5282', /* Lighter blue for accents */
+                        'aai-orange': '#ed8936', /* Orange for highlights/accents */
+                        'aai-gray': '#f7fafc', /* Light gray for backgrounds */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles or overrides for fonts */
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #333; /* Default text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+        /* Ensure hero section takes full viewport height */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-aai-gray">
+
+    <header class="bg-aai-blue text-white py-4 px-8 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white no-underline">Albany Aegis Initiative</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-aai-orange transition duration-300">Home</a></li>
+                    <li><a href="#core-mission" class="hover:text-aai-orange transition duration-300">Mission</a></li>
+                    <li><a href="#publications" class="hover:text-aai-orange transition duration-300">Publications</a></li>
+                    <li><a href="#dashboard" class="hover:text-aai-orange transition duration-300">Dashboard</a></li>
+                    <li><a href="#contact" class="hover:text-aai-orange transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero-section bg-aai-blue text-white p-8">
+        <div class="container mx-auto px-4">
+            <div class="mb-6">
+                <svg class="mx-auto h-24 w-24 text-aai-orange" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2l-8 4v.5c0 6.1 3.5 11.8 8 13.5 4.5-1.7 8-7.4 8-13.5V6l-8-4zm0 2.2l6 3v.3c0 4.8-2.9 9.3-6 10.8-3.1-1.5-6-6-6-10.8v-.3l6-3z"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Albany Aegis Initiative</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
+                A civic technology and public safety platform designed to support crime prevention, anti-corruption, and urban resilience strategies in Albany, New York.
+            </p>
+            <div class="text-lg text-aai-light-blue">
+                Status: <span class="font-semibold">Online</span> | Last Update: <span class="font-semibold">Placeholder Date</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="core-mission" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-aai-blue">Core Mission Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-aai-gray p-6 rounded-lg shadow-md border-t-4 border-aai-orange">
+                    <h3 class="text-xl font-bold mb-4 text-aai-blue">Data-Driven Decision-Making</h3>
+                    <p class="text-gray-700">
+                        Presenting crime trends, recidivism metrics, and predictive models to support targeted resource deployment.
+                    </p>
+                </div>
+
+                <div class="bg-aai-gray p-6 rounded-lg shadow-md border-t-4 border-aai-orange">
+                    <h3 class="text-xl font-bold mb-4 text-aai-blue">Behavioral Insight</h3>
+                    <p class="text-gray-700">
+                        Communicating research on criminal psychology, restorative justice, and community-based intervention strategies.
+                    </p>
+                </div>
+
+                <div class="bg-aai-gray p-6 rounded-lg shadow-md border-t-4 border-aai-orange">
+                    <h3 class="text-xl font-bold mb-4 text-aai-blue">Technological Integration</h3>
+                    <p class="text-gray-700">
+                        Highlighting use of surveillance tools, crime mapping, digital forensics, and real-time analytics in policing.
+                    </p>
+                </div>
+
+                <div class="bg-aai-gray p-6 rounded-lg shadow-md border-t-4 border-aai-orange">
+                    <h3 class="text-xl font-bold mb-4 text-aai-blue">Economic Diversification</h3>
+                    <p class="text-gray-700">
+                        Advocating for public-private development and employment pipelines that reduce socioeconomic causes of crime.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="py-16 bg-aai-light-blue text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Recent Reports & Publications</h2>
+            <div class="bg-white text-gray-800 p-8 rounded-lg shadow-md text-center text-gray-600">
+                <p>Placeholder for Publications List and Downloadable Reports</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="py-16 bg-aai-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-aai-blue">Interactive Dashboard</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center text-gray-600 min-h-[400px] flex items-center justify-center">
+                <p>Placeholder for Interactive Dashboard (e.g., embedded iframe)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-aai-blue">Get Involved / Contact Us</h2>
+            <div class="bg-aai-gray p-8 rounded-lg shadow-md text-center text-gray-600">
+                <p>Placeholder for Contact Form or Community Engagement Options (Future Roadmap)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-aai-blue text-white text-center p-6">
+        <p>&copy; 2025 Albany Aegis Initiative. All rights reserved. | <a href="#" class="underline text-aai-orange hover:text-orange-400">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
